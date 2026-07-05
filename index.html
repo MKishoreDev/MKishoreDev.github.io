@@ -17,13 +17,23 @@
 
     <!-- Canonical -->
     <link rel="canonical" href="https://mkishore.is-a.dev/">
+    <link rel="preconnect" href="https://mkishore.is-a.dev">
+    <link rel="dns-prefetch" href="//mkishore.is-a.dev">
 
+    <meta name="application-name" content="MKishore Portfolio">
+    <meta name="apple-mobile-web-app-title" content="MKishore">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="google" content="notranslate">
+    <meta name="rating" content="General">
+    <meta name="creator" content="Kishore M">
+    
     <!-- Verification -->
     <meta name="google-site-verification" content="m7vXohCfYdzzShJAvlHi5m6p6C_jAoYs36bOnU8SG-w">
 
     <!-- Redirect -->
-    <meta http-equiv="refresh" content="0; url=https://mkishore.is-a.dev">
-
+    <meta http-equiv="refresh" content="1; url=https://mkishore.is-a.dev">
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="MKishore">
@@ -63,6 +73,7 @@
         "@type":"PostalAddress",
         "addressCountry":"India"
       },
+      "email":"mailto:kishoredxd@gmail.com",
       "description":"Student developer passionate about backend development, open source, cybersecurity, and building scalable applications.",
       "knowsAbout":[
         "Python",
@@ -118,7 +129,9 @@
     </script>
 
     <script>
-        window.location.replace("https://mkishore.is-a.dev");
+        setTimeout(() => {
+    window.location.replace("https://mkishore.is-a.dev");
+}, 1000);
     </script>
 
     <style>
@@ -178,14 +191,23 @@
     <h1>Redirecting to MKishore Portfolio...</h1>
 
     <p>
-        This GitHub Pages site has moved to my official portfolio.<br>
-        You will be redirected automatically.
+    This GitHub Pages site has moved to my official portfolio.<br>
+    Redirecting in <strong id="countdown">1</strong> second...
     </p>
 
     <a href="https://mkishore.is-a.dev">
         Visit mkishore.is-a.dev
     </a>
 </div>
+<script>
+let remaining = 1;
+const countdown = document.getElementById("countdown");
 
+const timer = setInterval(() => {
+    remaining--;
+    countdown.textContent = Math.max(remaining, 0);
+    if (remaining <= 0) clearInterval(timer);
+}, 1000);
+</script>
 </body>
 </html>
